@@ -6,7 +6,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Personal Website</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     <!-- Google fonts-->
@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="../css/styles.css" rel="stylesheet" />
     <style>
         body {
             margin: 0;
@@ -40,26 +40,56 @@
 </head>
 <body id="page-top">
     <!-- Top Navigation -->
-    <nav class="top-nav">Bin picking problem solution on Doosan (Python)</nav>
+    <nav class="top-nav">Autonomous mapping robot ROS (Python)</nav>
     <!-- Page Content-->
     <br>
     <br>
     <br>
     <br>
     <br>
-    <p>This project tackles the challenge of efficiently selecting randomly positioned and oriented elements from containers, planes, or other 
-        components, such as those found on a production line, as part of the Bin Picking process. The goal of the project was to use the 
-        technology of vision systems and a cobot robot from Doosan and Universal Robots in order to optimally solve and perform the mentioned 
-        task. Python was used to integrate the devices and the algorithm itself</p>
+    <p>Computer simulation project of a mapping robot in ROS 2. After being placed in the selected map, the robot moves and collects 
+        information from the LIDAR distance sensor. This data enables it to understand the layout of its environment and construct a detailed map.
+        Tools such as Gazebo and Rviz were used to visualize and create realistic models of environments as well as to simulate robot behavior. 
+        The algorithm used is SLAM (Simultaneous Loaclization and Mapping), which enables accurate mapping of the surroundings while the robot 
+        is moving and the Nav2 navigation environment.</p>
     <br>
     <br>
     <br>
     <br>
     <br>
-    <p> website unfinished</p>
+    <p>website unfinished</p>
+    <style>
+        body {
+            margin: 0;
+            padding-left: 5rem;
+            padding-right: 5rem;
+            text-align: justify;
+            background-image: url('../assets/img/turtlebot3.png');
+            background-size: 38% auto;
+            background-repeat: no-repeat;
+            background-position: center 65px;
+            background-attachment: fixed;
+            color: white;
+            position: relative;
+            z-index: 0;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.65);
+            z-index: -1;
+            pointer-events: none;
+        }
+    </style>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
 </body>
+
 </html>

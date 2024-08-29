@@ -117,6 +117,44 @@ hr {
 *************MOJE EDITY**********************************************************************
 *********************************************************************************************/
 
+.arrow-container {
+  position: relative;
+  margin-top: 2rem; /* Adjust as needed to position the arrow container */
+}
+
+.arrow-container .arrow {
+  position: absolute;
+  top: -60px; /* Adjust this value to move the arrow higher */
+  left: 0; /* Adjust as needed */
+  background: #f39c12;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.arrow-container .arrow:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 20px; /* Adjust as needed */
+  border-width: 10px;
+  border-style: solid;
+  border-color: #f39c12 transparent transparent transparent;
+}
+
+.arrow-container .arrow a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.arrow-container .arrow a:hover {
+  text-decoration: underline;
+}
+
 
 .resume-section-content a {
   display: inline-flex; /* Ensure anchor tags are displayed as inline-flex */
