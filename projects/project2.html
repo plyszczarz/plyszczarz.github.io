@@ -36,11 +36,29 @@
             font-size: 20px;
             font-weight: bold;
         }
+
+        .top-nav .back-arrow {
+            position: absolute;
+            left: 20px; /* Adjust as needed */
+            font-size: 20px;
+            color: white;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .top-nav .back-arrow:hover {
+            color: #d1b8a6; /* Optional: Change color on hover */
+        }
     </style>
 </head>
 <body id="page-top">
     <!-- Top Navigation -->
-    <nav class="top-nav">Autonomous mapping robot ROS (Python)</nav>
+    <nav class="top-nav">
+        <a href="javascript:history.back()" class="back-arrow">
+            <i class="fas fa-arrow-left"></i> <!-- Font Awesome arrow icon -->
+        </a>
+        <div class="title">Autonomous mapping robot ROS (Python)</div>
+    </nav>
     <!-- Page Content-->
     <br>
     <br>
