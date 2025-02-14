@@ -259,11 +259,12 @@ hr {
   color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
 }
 
-/* .resume-section-content img {
-  width: 32px; 
-  height: 32px; 
-  margin-right: 10px; 
-} */
+.github-note {
+  font-size: 12px;
+  color: #6c757d; /* A subtle gray color */
+  margin-top: 5px;
+  font-style: italic;
+}
 
 
 /********************************************************************************************

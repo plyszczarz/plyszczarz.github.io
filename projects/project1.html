@@ -10,7 +10,6 @@
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="../css/styles.css" rel="stylesheet" />
     <style>
         body {
@@ -18,6 +17,14 @@
             padding-left: 5rem;
             padding-right: 5rem;
             text-align: justify;
+            background-image: url('../assets/img/hydro_station_icon.jpg');
+            background-size: 70% auto;
+            background-repeat: no-repeat;
+            background-position: center 20px;
+            background-attachment: fixed;
+            color: white;
+            position: relative;
+            z-index: 0;
         }
 
         .top-nav {
@@ -31,25 +38,111 @@
             z-index: 1;
             display: flex;
             align-items: center;
-            justify-content: center; /* Centers the title */
+            justify-content: center;
         }
 
         .top-nav .back-arrow {
             position: absolute;
-            left: 20px; /* Adjust as needed */
+            left: 20px;
             font-size: 20px;
             color: white;
             cursor: pointer;
             text-decoration: none;
         }
 
-        .top-nav .back-arrow:hover {
-            color: #d1b8a6; /* Optional: Change color on hover */
-        }
-
         .top-nav .title {
             text-align: center;
             font-size: 20px;
+            font-weight: bold;
+        }
+
+        .hardware-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 30px;
+            width: 100%;
+        }
+
+        .hardware-list {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .hardware-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 10px;
+        }
+
+        .hardware-img, .hardware-img-yf {
+            width: 200px;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.3);
+        }
+
+        .hardware-img-yf {
+            height: 150px;
+        }
+
+        .hardware-details {
+            flex: 1;
+            text-align: center;
+        }
+
+        .big-hardware-img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.3);
+        }
+
+        .hardware-description {
+            margin-top: 10px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .app-appearance {
+            width: 100%;
+            margin-top: 50px;
+            clear: both;
+            display: block;
+        }
+
+        .app-appearance h2 {
+            font-size: 24px;
+            color: white;
+        }
+
+        .app-images {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .app-image-container {
+            text-align: center;
+            max-width: 450px;
+        }
+
+        .app-img {
+            width: 100%;
+            max-width: 450px;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.3);
+        }
+
+        .app-description {
+            margin-top: 10px;
+            font-size: 14px;
             font-weight: bold;
         }
 
@@ -67,87 +160,77 @@
     </style>
 </head>
 <body id="page-top">
-    <!-- Top Navigation -->
     <nav class="top-nav">
         <a href="javascript:history.back()" class="back-arrow">
-            <i class="fas fa-arrow-left"></i> <!-- Font Awesome arrow icon -->
+            <i class="fas fa-arrow-left"></i>
         </a>
         <div class="title">QT app visualizing Hydro-station sensors data (C++)</div>
     </nav>
-    <!-- Page Content-->
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <p>Project of Qt application dedicated to the monitoring of environmental sensor data. The application interfaces with a variety of 
+
+    <br><br><br><br><br>
+
+    <p><p>Project of Qt application dedicated to the monitoring of environmental sensor data. The application interfaces with a variety of 
         sensors including ultrasonic distance, humidity, water flow speed, and DHT11 temperature sensors. Its primary purpose is to provide 
         real-time visualization of sensor readings and to alert users to any critical conditions. The application is designed with 
         a user-friendly interface, enabling easy interpretation of sensor data. It offers seamless integration with multiple sensors,
         ensuring comprehensive monitoring of environmental parameters. Additionally, it includes an alert system to notify users of any 
         readings that exceed predetermined thresholds.</p>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <p>Hardwear used:</p>
-    <style>
-        body {
-            margin: 0;
-            padding-left: 5rem;
-            padding-right: 5rem;
-            text-align: justify;
-            background-image: url('../assets/img/hydro_station_icon.jpg');
-            background-size: 70% auto;
-            background-repeat: no-repeat;
-            background-position: center 20px;
-            background-attachment: fixed;
-            color: white;
-            position: relative;
-            z-index: 0;
-        }
+        </p>
 
-        body::before {
-            content: "";
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100vh;
-            background-color: rgba(0, 0, 0, 0.65);
-            z-index: -1;
-            pointer-events: none;
-        }
-    </style>
-    <!-- Bootstrap core JS-->
+
+    <br>
+    <br>
+    <br>
+
+    <p><strong>Hardware used:</strong></p>
+
+    <div class="hardware-container">
+        <div class="hardware-list">
+            <div class="hardware-item">
+                <img src="../assets/img/proj1_arduino.png" alt="Arduino Uno" class="hardware-img">
+                <span>Arduino Uno</span>
+            </div>
+            <div class="hardware-item">
+                <img src="../assets/img/proj1_hc-sr04.png" alt="HC-RC04" class="hardware-img">
+                <span>Czujnik ultradźwiękowy odległości HC-RC04</span>
+            </div>
+            <div class="hardware-item">
+                <img src="../assets/img/proj1_yf-g1.png" alt="YF-G1" class="hardware-img-yf">
+                <span>Czujnik prędkości przepływu cieczy YF-G1</span>
+            </div>
+            <div class="hardware-item">
+                <img src="../assets/img/proj1_dht11.png" alt="DHT11" class="hardware-img">
+                <span>Czujnik temperatury i wilgotności DHT11</span>
+            </div>
+        </div>
+
+        <div class="hardware-details">
+            <img src="../assets/img/proj1_baza.png" alt="Hardware Overview" class="big-hardware-img">
+            <p class="hardware-description">Overview of the Hydro-station hardware setup during initial testing. Unfortunately, I didn’t capture 
+                an image of the final assembly with the simulation water tank—but trust me, it looked much better all put together!</p>                
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    
+    <div class="app-appearance">
+        <h2>Application Appearance</h2>
+        <p>Below are the two main windows of the Qt application...</p>
+
+        <div class="app-images">
+            <div class="app-image-container">
+                <img src="../assets/img/proj1_app_main.png" alt="Main Application Window" class="app-img">
+                <p class="app-description">Main window of the Qt application...</p>
+            </div>
+            <div class="app-image-container">
+                <img src="../assets/img/proj1_app_detail.png" alt="Detailed Sensor View" class="app-img">
+                <p class="app-description">Detailed sensor readings and data visualization.</p>
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
 </body>
 </html>
